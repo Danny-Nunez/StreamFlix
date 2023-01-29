@@ -1,3 +1,4 @@
+
 .n9VUXQmB98rW0ML_Bznz {
     display: none;
     top: -660px;
@@ -181,7 +182,17 @@
     }
   }
   
+  @media screen and (max-width: 1050px) {
+    .wrapcontainer {
+      margin-bottom: 350px;
+     }
+  }
+
+
   @media screen and (max-width: 800px) {
+    .wrapcontainer {
+      margin-bottom: 550px;
+     }
     .modal__content {
       margin: 0rem 1rem;
       width: 100%;
@@ -192,6 +203,12 @@
   }
   
   @media screen and (max-width: 499px) {
+    .wrapcontainer {
+      margin-bottom: 650px;
+     }
+     .overviewText {
+       font-size: 12px;
+     }
     .modal__content {
       background: transparent;
       height: auto;
@@ -238,4 +255,9 @@
    margin-right: 18px;
    
    
+  }
+  @media screen and (max-width: 299px) {
+    .wrapcontainer {
+      margin-bottom: 870px;
+     }
   }

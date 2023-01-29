@@ -107,6 +107,7 @@ function Watch(params) {
   
 
   return (
+    <div className="wrapcontainer">
     <div className="h-screen bg-black">
       
       {isChoose ? (
@@ -151,13 +152,13 @@ function Watch(params) {
             </h4>
         </div>
       ) : (
-        <div className="h-screen">
+        <div className="h-screen bg-black">
 
 
 
           
           <LazyLoadImage
-            className="bg-cover brightness-50 blur-lg h-screen "
+            className="bg-cover brightness-50 blur-lg h-screen bg-black"
             placeholder={
               <ReactLoading
                 type={"spinningBubbles"}
@@ -290,7 +291,7 @@ function Watch(params) {
               </p>
               
               <p className=" mt-3 mr-10 break-words font-semibold md:text-base text-sm">
-                Overview:</p>{movieInfo.overview}
+                Overview:</p><div className="overviewText">{movieInfo.overview}</div>
               
               <h1 className="mt-3 mr-10 break-words font-semibold md:text-base text-sm">
               <p className="font-semibold md:text-base text-sm -mb-5">
@@ -387,6 +388,7 @@ function Watch(params) {
     </div>
         </div>
       )}
+    </div>
     </div>
   );
 }
