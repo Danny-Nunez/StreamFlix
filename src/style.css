@@ -1,0 +1,241 @@
+.n9VUXQmB98rW0ML_Bznz {
+    display: none;
+    top: -660px;
+}
+._K4uvLoezAPVW9XEws1r {
+    display: none;
+    top: -660px;
+}
+.n9VUXQmB98rW0ML_Bznz    _k8L_THNKKsDedINowuQ {
+    display: none;
+    top: -660px;
+}
+.iv6bGFFrBm2OTsdCZq8K {
+    display: none;
+    top: -660px;
+}
+.webtor {
+    
+}
+.mejs__offscreen {
+    display: none;
+    top: -660px;
+}
+._4KjPzfFqnPyBgIgiXkX {
+    display: none;
+}
+.frvBxo3OzNO6g_x_mz5H {
+    display: none;
+}
+.mboJcBcmq4BzeSkocC95 {
+    display: none;
+}
+.cQBiQUBGsHphKE1GuS3N {
+    display: none;
+}
+.EO1yJtdgfnudgUYegQ3u {
+    display: none;
+}
+.hvalknyvl0xoqjnt1mnz {
+    display: none;
+}
+#player {
+   
+}
+.webtor {
+    --download: 0%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: #ececec;
+    user-select: none;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    z-index: 10;
+    will-change: width, right, bottom, position, display;
+   
+    
+    height: auto;
+    transition: width 0.2s ease;
+    overflow: hidden;
+  }
+  .webtor:target {
+    bottom: 0;
+    right: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: none !important;
+  }
+  .webtor:target .middle,
+.webtor:target .bottom {
+  display: flex;
+}
+.webtor.pip canvas {
+    left: 99.9% !important;
+    /*hack to hide the canvas but still keep it updating*/
+  }
+  
+  .webtor .ctrl[data-name='downloadFile'] {
+    text-decoration: none !important;
+    color: #ececec !important;
+    justify-self: end;
+  }
+  .webtor:target a.miniplayer,
+  .webtor .bottom input[type='range'][data-name='setProgress']+img[src=' '],
+  .webtorvideo[src='']:not([poster]),
+  .webtor.ctrl[disabled],
+  .webtor.ctrl[href=''],
+  .webtor:fullscreen .ctrl[data-name='toggleTheatre'],
+  .webtor:fullscreen .ctrl[data-name='openPlaylist'],
+  .webtor:fullscreen .ctrl[data-name='togglePopout'] {
+  display: none !important;
+}
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .modal__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 28, 28, 0.19);
+    backdrop-filter: blur(6px);
+    opacity: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.3s;
+    animation-name: modal-video;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+    z-index: 100;
+  }
+  
+  .modal__align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .modal__content {
+    width: 800px;
+    height: 500px;
+    box-shadow: 0px 100px 80px rgba(184, 184, 184, 0.07),
+      0px 25.8162px 19px 4px rgba(178, 178, 178, 0.0456112),
+      0px 7.779px 7.30492px rgba(0, 0, 0, 0.035),
+      0px 1.48838px 2.0843px rgba(0, 0, 0, 0.0243888);
+    border-radius: 20px;
+    background: transparent;
+    color: #000;
+    margin: 0rem 4rem;
+  }
+  
+  .modal__close {
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    bottom: 50px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+  }
+  
+  .modal__video-align {
+    display: flex;
+    position: relative;
+    bottom: 37px;
+  }
+  
+  .modal__video-style {
+    border-radius: 20px;
+    z-index: 100;
+  }
+  
+  .modal__spinner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .modal__spinner {
+    animation: spin 2s linear infinite;
+    font-size: 40px;
+    color: #1b6aae;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .modal__content {
+      margin: 0rem 1rem;
+      width: 100%;
+    }
+    .modal__video-style {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 499px) {
+    .modal__content {
+      background: transparent;
+      height: auto;
+    }
+    .modal__video-align {
+      bottom: 0px;
+    }
+    .modal__video-style {
+      height: auto;
+    }
+  }
+  .genreBubble {
+    background-color: rgb(210, 11, 11);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 2px;
+    width: fit-content;
+    display: inline-block;
+  }
+  .actorbubble {
+    position: relative;
+    width: 65px; 
+    padding-top: 30px;
+    margin: auto;
+} 
+    
+.actorbubble img { 
+        width: 100%; height: auto;
+        border-radius: 10px;
+  }
+  .actorname {
+   display: inline-flex;
+    font-size: 8px; 
+    width: 100px;
+    text-align: center;
+    margin: auto;
+  }
+  .castcontainer {
+   display: inline-block;
+   margin-left: 18px;
+   margin-right: 18px;
+   
+   
+  }
