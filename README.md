@@ -1,14 +1,16 @@
-<h1>First Version of Torrent Stream Site - with ReactJS</h1>
+<h1>Torrent Stream Site first version - with ReactJS</h1>
 
-A site using torrent to stream movie directly on your browser. 
+A site using torrent to stream movie directly on your browser. Also this version uses a manuel updated json file to host the movies. This was my first attempt so pardon the ads. The next version I built my own server to avoid ads while movie play back. 
 
 ## Live Demo
 
-![image](https://user-images.githubusercontent.com/48487157/152199597-bf1913aa-20fe-4c15-969b-12b6638243ef.png)
+<img width="1031" alt="Screen Shot 2023-02-06 at 8 29 30 AM" src="https://user-images.githubusercontent.com/114783191/216984275-cd50ef2c-1630-4f29-9523-ec3276163225.png">
 
-![image](https://user-images.githubusercontent.com/48487157/154512779-23745bbc-3b43-44e6-84dc-29df45f8e9c6.png)
+<img width="1029" alt="Screen Shot 2023-02-06 at 8 29 48 AM" src="https://user-images.githubusercontent.com/114783191/216984284-803858fc-e598-49cd-91f8-d6f96f082d58.png">
 
-![image](https://user-images.githubusercontent.com/48487157/150942319-73b58cd9-a27c-4d64-b464-4562c77196a8.png)
+<img width="1029" alt="Screen Shot 2023-02-06 at 8 30 01 AM" src="https://user-images.githubusercontent.com/114783191/216984313-9b52a850-c788-4def-92cd-f5b1163d9964.png">
+
+<img width="1032" alt="Screen Shot 2023-02-06 at 8 30 27 AM" src="https://user-images.githubusercontent.com/114783191/216984315-4c25c58e-567d-42e8-a637-aa86ced6e2e0.png">
 
 Demo site: https://streamflixx.netlify.app/
 
