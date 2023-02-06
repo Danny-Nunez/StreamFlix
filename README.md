@@ -1,6 +1,6 @@
-<h1>Torrent Stream Site first version - with ReactJS</h1>
+<h1>Torrent Streaming Website - Built with ReactJS</h1>
 
-A site using torrent to stream movie directly on your browser. Also this version uses a manuel updated json file to host the movies. This was my first attempt so pardon the ads. The next version I built my own server to avoid ads while movie play back. 
+This site uses torrents to stream movie directly on your browser. Also this version uses a manuel updated json file to host the movies. This was my first attempt, so pardon the ads. The next version I built my own server to avoid ads while movie play back. 
 
 ## Live Demo
 
@@ -12,7 +12,7 @@ A site using torrent to stream movie directly on your browser. Also this version
 
 <img width="1032" alt="Screen Shot 2023-02-06 at 8 30 27 AM" src="https://user-images.githubusercontent.com/114783191/216984315-4c25c58e-567d-42e8-a637-aa86ced6e2e0.png">
 
-Demo site: https://streamflixx.netlify.app/
+Demo site: 👉🏻 https://streamflixx.netlify.app/
 
 ## Available Scripts
 
