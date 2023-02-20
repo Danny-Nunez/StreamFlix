@@ -64,48 +64,6 @@ function Watch(params) {
     setVideoLoading(!videoLoading);
   };
 
-  
-  // function getSub() {
-  //   const sub_data = fetch(
-  //     "https://tdgvnbqyeablbicdulwh.supabase.co/rest/v1/movies?select=subtitles%2Cenglish_subtitles&id=eq." +
-  //       movieObject.id,
-  //     {
-  //       method: "GET",
-  //       headers: {
-  //         apikey:
-  //           "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMDMzNDg4OSwiZXhwIjoxOTQ1OTEwODg5fQ.tucD7--82BeiaZBBu4erF53BJEBfRYcr-WSlvC9mv5o",
-  //         "accept-language": "vi,en;q=0.9,en-GB;q=0.8,en-US;q=0.7",
-  //       },
-  //     }
-  //   ).json()[0];
-  //   // console.log(metadata)
-  //   let en_sub_url = URL.createObjectURL(
-  //     new Blob([sub_data.english_subtitles], {
-  //       type: "text/vtt;charset=utf8",
-  //     })
-  //   );
-  //   let vi_sub_url = URL.createObjectURL(
-  //     new Blob([sub_data.subtitles], { type: "text/vtt;charset=utf8" })
-  //   ); //;charset=utf8
-
-  //   console.log("{" + en_sub_url + "}");
-  //   return [
-  //     {
-  //       srclang: "en",
-  //       label: "English",
-  //       src: "https://brenopolanski.github.io/html5-video-webvtt-example/MIB2-subtitles-pt-BR.vtt",
-  //       default: true,
-  //     },
-  //     {
-  //       srclang: "vi",
-  //       label: "Tiếng Việt",
-  //       src: vi_sub_url,
-  //       default: false,
-  //     },
-  //   ];
-  // }
-  
-
   return (
     <div className="wrapcontainer">
     <div className="h-screen bg-black">
@@ -299,7 +257,7 @@ function Watch(params) {
                 {movieInfo.credits.cast.slice(0, 10).map((e, i) => (
                   <>
                   <div className="castcontainer">
-                  <div className="actorbubble"><img src={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/" + e.profile_path}></img>
+                  <div className="actorbubble"> <img src={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/" + e.profile_path} alt="cast"></img>
                   <div className="actorname">{e.name}</div>
                   </div> 
                   
@@ -360,7 +318,7 @@ function Watch(params) {
                                 className="modal__video-style"
                                 onLoad={spinner}
                                 loading="lazy"
-                                width="800"
+                                width="100%"
                                 height="500"
                                 src={"https://autoembed.to/trailer/movie/" + movieObject.tmdb_id}
                                 title="Trailer video player"

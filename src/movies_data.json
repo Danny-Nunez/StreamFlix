@@ -29697,5 +29697,43 @@
 		],
 		"hash": "097AF04A175430F4312404775D8A24299BE6A12A",
 		"updated": "2022-01-18T00:53:21.742+00:00"
+	},
+	{
+		"id": 9648,
+		"tmdb_id": 788752,
+		"imdb_id": "tt13051810",
+		"title": "Viking Wolf",
+		"english_title": "Viking Wolf",
+		"backdrop_path": "/1pDYetDF3r9V7ZB5SeyoPcUkBiB.jpg",
+		"imdb": 5.1,
+		"release_date": "2022-11-18",
+		"runtime": 137,
+		"genre_ids": [
+			28,
+			53,
+			12,
+			80
+		],
+		"hash": "250BF4D1B42F503D7448B892D27E7550A8D1D5AF",
+		"updated": "2022-01-18T00:53:21.742+00:00"
+	},
+	{
+		"id": 529892,
+		"tmdb_id": 505642,
+		"imdb_id": "tt9114286",
+		"title": "Black Panther: Wakanda Forever",
+		"english_title": "Black Panther: Wakanda Forever",
+		"backdrop_path": "/xDMIl84Qo5Tsu62c9DGWhmPI67A.jpg",
+		"imdb": 6.8,
+		"release_date": "2022-11-11",
+		"runtime": 137,
+		"genre_ids": [
+			28,
+			12,
+			14,
+			878
+		],
+		"hash": "83F313A5CCA6A1D0F50573A87B2416A90D6ED517",
+		"updated": "2022-01-18T00:53:21.742+00:00"
 	}
 ]
