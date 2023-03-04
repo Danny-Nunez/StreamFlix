@@ -220,8 +220,8 @@ function Home() {
         <button
           className={
             filterSelect === "nn"
-              ? "p-2 mr-2 ml-2 font-semibold text-gray-300 hover:text-white border-b-2 border-red-600"
-              : "p-2 mr-2 ml-2 font-semibold text-gray-300 hover:text-white"
+              ? "p-2 mr-1 ml-1 font-semibold text-gray-300 hover:text-white border-b-2 border-red-600"
+              : "p-2 mr-1 ml-1 font-semibold text-gray-300 hover:text-white"
           }
           onClick={() => {
             handleChangeFilter("nn");
@@ -232,8 +232,8 @@ function Home() {
         <button
           className={
             filterSelect === "mn"
-              ? "p-2 mr-2  ml-2 font-semibold text-gray-300 hover:text-white border-b-2 border-red-600"
-              : "p-2  mr-2 ml-2 font-semibold text-gray-300 hover:text-white"
+              ? "p-2 mr-1  ml-1 font-semibold text-gray-300 hover:text-white border-b-2 border-red-600"
+              : "p-2  mr-1 ml-1 font-semibold text-gray-300 hover:text-white"
           }
           onClick={() => {
             handleChangeFilter("mn");
@@ -244,8 +244,8 @@ function Home() {
         <button
           className={
             filterSelect === "ic"
-              ? "p-2 mr-2 ml-2 font-semibold text-gray-300 hover:text-white border-b-2 border-red-600"
-              : "p-2 mr-2 ml-2  font-semibold text-gray-300 hover:text-white"
+              ? "p-2 mr-1 ml-1 font-semibold text-gray-300 hover:text-white border-b-2 border-red-600"
+              : "p-2 mr-1 ml-1  font-semibold text-gray-300 hover:text-white"
           }
           onClick={() => {
             handleChangeFilter("ic");
@@ -254,7 +254,7 @@ function Home() {
           TOP
         </button>
 
-        <div className="flex ml-1 font-semibold text-gray-300 hover:text-white">
+        <div className="flex ml-0 font-semibold text-gray-300 hover:text-white">
           <select
             onChange={(el) => handleChangeFilter(el.target.value)}
             className={
