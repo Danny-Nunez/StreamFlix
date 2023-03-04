@@ -341,7 +341,7 @@ function Home() {
                 dataLength={searchedArray.length}
                 next={() => handleLoadMore()}
                 hasMore={hasMoreLoad}
-                loader={isSearched===""?<ReactLoading type={"spokes"} padding="auto" color="#fff" height={'20%'} width={'20%'} />:""}
+                loader={isSearched===""?<div className="infinitepad"><ReactLoading type={"spin"} color="#d30000" height={'20%'} width={'20%'} /></div>:""}
                 
               >
                 {searchedArray.length > 0 ? (

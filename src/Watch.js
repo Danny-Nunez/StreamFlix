@@ -87,23 +87,23 @@ function Watch(params) {
           )}
 
           {/* <TorrentPlayer hash={movieObject.hash} /> */}
-          <button
+          {/* <button
             onClick={() => ChangeServer(2)}
             className="mr-3 mt-3 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
           >
             Server 1
-          </button>
-          <button
+          </button> */}
+          {/* <button
             onClick={() => ChangeServer(1)}
             className="bg-blue-500 mt-3 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
           >
             Server 2
-          </button>
+          </button> */}
           <h4 className="text-white">
             
           </h4>
-          <h4 className="text-white">
-            <b>Note:</b> 
+          <h4 className="text-white text-sm p-5">
+            <b>Note: </b> 
             Due to using torrent protocol to transmit data,
             The download speed will be very fast and lag-free, but it will take some time to
             initialize wait for the system to connect with many other peers to keep the movie watching process stable.
@@ -114,15 +114,11 @@ function Watch(params) {
 
 
 
-          
+
           <LazyLoadImage
             className="bg-cover brightness-50 blur-lg h-screen bg-black"
             placeholder={
-              <ReactLoading
-                type={"spinningBubbles"}
-                height={"5em"}
-                width={"5em"}
-              />
+             <ReactLoading type={"spin"} color="#d30000" height={'20%'} width={'20%'} />
             }
             src={
               "https://www.themoviedb.org/t/p/original" +

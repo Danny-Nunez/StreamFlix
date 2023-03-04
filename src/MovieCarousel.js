@@ -31,23 +31,23 @@ function MovieCarousel({bannerMovies}){
           }
         />
         <div
-          className="ml-10 absolute bg-white rounded-full p-1 bg-opacity-50"
+          className="ml-10 absolute bg-white rounded-full p-1 "
           style={{ top: "5%",right:"3%"}}
         >
           <h4
             className="
-   text-sm
+   text-md
    ml-2
    mr-2
    font-sans
-   font-normal
+   font-bold
   "
           >
             <FontAwesomeIcon
-              className="text-teal-800 mr-1 shadow-lg"
+              className="text-red-700 mr-1 shadow-lg"
               icon={faClock}
             />
-            {Math.floor(e.runtime / 60) + "h" + (e.runtime % 60)}
+            {Math.floor(e.runtime / 60) + "h " + (e.runtime % 60)}
           </h4>
         </div>
         <div
@@ -56,18 +56,18 @@ function MovieCarousel({bannerMovies}){
         >
           <h4
             className="
-   text-sm
+   text-md
    ml-2
    mr-2
    font-sans
-   font-normal
+   font-bold
   "
-          ><div className="imdb">
+          >
             <FontAwesomeIcon
               className="text-yellow-400 mr-1"
               icon={faStar}
             />
-            IMDb {e.imdb}</div>
+            IMDb {e.imdb}
           </h4>
         </div>
         <div
@@ -81,7 +81,7 @@ function MovieCarousel({bannerMovies}){
             
           </h1>
           <h2
-            className="text-white"
+            className="text-white1"
             style={{ textShadow: "1px 1px #000000", fontSize: "5vw", texttransform: "uppercase" }}
           >
             {e.english_title} ({new Date(e.release_date).getFullYear()})

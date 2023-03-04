@@ -1,11 +1,17 @@
-
+.infinitepad{
+  display: flex;
+  padding-left: 42%;
+  padding-top: 20%;
+}
 .imdb {
   font-weight: 900;
   font-size: 16px;
 }
-.text-white {
+.text-white1 {
   font-weight: 900;
-  
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-shadow: #000;
 }
 #movieResults {
   height: 100%;
