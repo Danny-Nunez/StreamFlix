@@ -17,8 +17,8 @@ const fetch = require("sync-fetch");
 
 function Home() {
   const [isLoaded,setLoad]= useState(true);
-  const [filterSelect, changeFilterSelect] = useState("nn"); //
-  const maxLoadMovies = 5
+  const [filterSelect, changeFilterSelect] = useState("mn"); //
+  const maxLoadMovies = 3
   const [hasMoreLoad, setHasMoreLoad] = useState(true);
   const [isAdvanceSearch, setSearch] = useState(false);
   const [isGoTop, changeGoToTop] = useState(false);
@@ -185,7 +185,7 @@ function Home() {
     };
   });
   return (
-    <div>
+    <div className="body">
       <div>
         <div className="container flex w-full">
           <div className="flex rounded-full w-full">
@@ -220,53 +220,53 @@ function Home() {
         <button
           className={
             filterSelect === "nn"
-              ? "p-2 font-semibold text-gray-300 hover:text-white border-b-2 border-blue-600"
-              : "p-2  font-semibold text-gray-300 hover:text-white"
+              ? "p-2 mr-2 ml-2 font-semibold text-gray-300 hover:text-white border-b-2 border-red-600"
+              : "p-2 mr-2 ml-2 font-semibold text-gray-300 hover:text-white"
           }
           onClick={() => {
             handleChangeFilter("nn");
           }}
         >
-          POPULAR MOVIES
+          POPULAR
         </button>
         <button
           className={
             filterSelect === "mn"
-              ? "p-2 font-semibold text-gray-300 hover:text-white border-b-2 border-blue-600"
-              : "p-2  font-semibold text-gray-300 hover:text-white"
+              ? "p-2 mr-2  ml-2 font-semibold text-gray-300 hover:text-white border-b-2 border-red-600"
+              : "p-2  mr-2 ml-2 font-semibold text-gray-300 hover:text-white"
           }
           onClick={() => {
             handleChangeFilter("mn");
           }}
         >
-          LATEST MOVIES
+          LATEST
         </button>
         <button
           className={
             filterSelect === "ic"
-              ? "p-2 font-semibold text-gray-300 hover:text-white border-b-2 border-blue-600"
-              : "p-2   font-semibold text-gray-300 hover:text-white"
+              ? "p-2 mr-2 ml-2 font-semibold text-gray-300 hover:text-white border-b-2 border-red-600"
+              : "p-2 mr-2 ml-2  font-semibold text-gray-300 hover:text-white"
           }
           onClick={() => {
             handleChangeFilter("ic");
           }}
         >
-          TOP RATED 
+          TOP
         </button>
 
-        <div className="flex ml-2 font-semibold text-gray-300 hover:text-white">
+        <div className="flex ml-1 font-semibold text-gray-300 hover:text-white">
           <select
             onChange={(el) => handleChangeFilter(el.target.value)}
             className={
               filterSelect !== "nn" &&
               filterSelect !== "mn" &&
               filterSelect !== "ic"
-                ? "border-b-2 border-blue-600 p-2 h-full font-semibold bg-gray-900 text-blue-600 hover:text-blue-700 rounded focus:text-blue-700 focus:font-semibold focus:bg-gray-900 outline-none"
-                : "p-2 h-full font-semibold bg-gray-900 text-blue-600 hover:text-blue-700 rounded focus:text-blue-700 focus:font-semibold focus:bg-gray-900 outline-none"
+                ? "border-b-2 border-red-600 p-2 h-full font-semibold bg-gray-900 text-red-600 hover:text-red-700 rounded focus:text-red-700 focus:font-semibold focus:bg-gray-900 outline-none"
+                : "p-2 h-full font-semibold bg-gray-900 text-red-600 hover:text-red-700 rounded focus:text-red-700 focus:font-semibold focus:bg-gray-900 outline-none"
             }
           >
             <option
-              className="text-gray-300 hover:text-white bg-gray-900 hover:border-blue-600 hover:border-b-2 hover:bg-blue-900 font-semibold"
+              className="text-gray-300 hover:text-white bg-gray-900 hover:border-red-600 hover:border-b-2 hover:bg-red-900 font-semibold"
               selected="selected"
               value={filterSelect}
               onClick={() => handleChangeFilter("all")}
@@ -275,7 +275,7 @@ function Home() {
             </option>
             {MovieTypes.map((e) => (
               <option
-                className="text-gray-300 hover:text-white bg-gray-900 hover:border-blue-600 hover:border-b-2 hover:bg-blue-900 font-semibold"
+                className="text-gray-300 hover:text-white bg-gray-900 hover:border-red-600 hover:border-b-2 hover:bg-red-900 font-semibold"
                 key={e.key}
                 value={e.key}
               >
@@ -287,6 +287,7 @@ function Home() {
       </div>
 
       <div id="movieResults">
+        
         {isSearched !== "" ? (
           <h4 className="text-white text-center">
             Search results for: {isSearched}
@@ -298,7 +299,7 @@ function Home() {
           <>
             <button
               onClick={() => setSearch(!isAdvanceSearch)}
-              className="text-centers bg-blue-500 mt-3 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+              className="text-centers bg-red-500 mt-3 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-red-500 rounded"
             >
               {!isAdvanceSearch ? "Turn on" : "Turn off"} advanced search mode
             </button>
@@ -319,7 +320,7 @@ function Home() {
                     <Link to="/Watch">
                       <button
                         onClick={() => handleChooseMovie(e.Magnet, e.Name)}
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded"
+                        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-red-700 rounded"
                       >
                         {e.Name}
                       </button>
@@ -368,7 +369,7 @@ function Home() {
                     </h4>
                     <button
                       onClick={() => setSearch(!isAdvanceSearch)}
-                      className="text-centers bg-blue-500 mt-3 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+                      className="text-centers bg-red-500 mt-3 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-red-500 rounded"
                     >
                       {!isAdvanceSearch ? "Turn on" : "Turn off"} advanced search mode
                     </button>
@@ -391,7 +392,8 @@ function Home() {
               ) : (
                 ""
               )}
-            </div>
+              </div>
+            
           </>
         )}
       </div>

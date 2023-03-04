@@ -1,4 +1,20 @@
 
+.imdb {
+  font-weight: 900;
+  font-size: 16px;
+}
+.text-white {
+  font-weight: 900;
+  
+}
+#movieResults {
+  height: 100%;
+  
+}
+.searchback {
+  background-color: #000;
+  height: 100vh;
+}
 .n9VUXQmB98rW0ML_Bznz {
     display: none;
     top: -660px;

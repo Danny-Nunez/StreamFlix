@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import { memo } from "react";
+import "./style.css";
 import { faStar,faClock } from "@fortawesome/free-solid-svg-icons";
 function MovieCarousel({bannerMovies}){
     const handleChooseMovie = (id) => {
@@ -61,12 +62,12 @@ function MovieCarousel({bannerMovies}){
    font-sans
    font-normal
   "
-          >
+          ><div className="imdb">
             <FontAwesomeIcon
-              className="text-yellow-400 mr-1 shadow-lg"
+              className="text-yellow-400 mr-1"
               icon={faStar}
             />
-            IMDb {e.imdb}
+            IMDb {e.imdb}</div>
           </h4>
         </div>
         <div
