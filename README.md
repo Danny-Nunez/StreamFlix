@@ -1,6 +1,6 @@
 <h1>Torrent Streaming Website - Built with ReactJS</h1>
 
-This site uses torrents to stream movie directly on your browser. Also this version uses a manuel updated json file to host the movies. This was my first attempt, so pardon the ads. The next version I built my own server to avoid ads while movie play back. 
+This site uses torrents to stream movie directly on your browser. Also this version uses a manuel updated json file to host the movies. I have removed all ads from the player. StreamFlixx uses api's for data and torrents for movies. I will be adding tvshows in the future.
 
 ## Live Demo
 
