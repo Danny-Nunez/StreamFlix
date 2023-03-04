@@ -18,7 +18,7 @@ const fetch = require("sync-fetch");
 function Home() {
   const [isLoaded,setLoad]= useState(true);
   const [filterSelect, changeFilterSelect] = useState("mn"); //
-  const maxLoadMovies = 3
+  const maxLoadMovies = 5
   const [hasMoreLoad, setHasMoreLoad] = useState(true);
   const [isAdvanceSearch, setSearch] = useState(false);
   const [isGoTop, changeGoToTop] = useState(false);
