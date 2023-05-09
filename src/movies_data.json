@@ -29771,5 +29771,39 @@
 		],
 		"hash": "83F313A5CCA6A1D0F50573A87B2416A90D6ED517",
 		"updated": "2023-01-18T00:53:21.742+00:00"
+	},
+	{
+		"id": 1718,
+		"tmdb_id": 1374,
+		"imdb_id": "tt0089927",
+		"title": "Rocky IV",
+		"english_title": "Rocky IV",
+		"backdrop_path": "/ufUdEHvs31M8yw3HMFjhTaVJIVp.jpg",
+		"imdb": 6.9,
+		"release_date": "1985-11-21",
+		"runtime": 91,
+		"genre_ids": [
+			28,
+			18
+		],
+		"hash": "867B338F4DC00E241EA09A7B35030D51DC65225C",
+		"updated": "2021-01-18T00:53:21.742+00:00"
+	},
+	{
+		"id": 1719,
+		"tmdb_id": 677179,
+		"imdb_id": "tt11145118",
+		"title": "Creed III",
+		"english_title": "Creed III",
+		"backdrop_path": "/5i6SjyDbDWqyun8klUuCxrlFbyw.jpg",
+		"imdb": 6.9,
+		"release_date": "2023-03-01",
+		"runtime": 116,
+		"genre_ids": [
+			28,
+			18
+		],
+		"hash": "EF8803244D7984CDD7EB682C42F48C49B1CF8BC6",
+		"updated": "2023-03-18T00:53:21.742+00:00"
 	}
 ]
