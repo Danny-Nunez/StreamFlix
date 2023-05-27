@@ -1,5 +1,7 @@
 // import Home from "./Home";
 // import Watch from "./Watch";
+import { useEffect } from "react";
+import ReactGA from 'react-ga';
 import "./App.css";
 import { HashRouter, Route, Routes, Link } from "react-router-dom";
 import * as React from "react";
@@ -8,16 +10,18 @@ import BeatLoader from "react-spinners/BeatLoader";
 const Home = React.lazy(() => import("./Home"));
 const Watch = React.lazy(() => import("./Watch"));
 
+function initializeReactGA() {
+  ReactGA.initialize('G-N1YK411Q4Y');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+}
+
 function App() {
+  useEffect(() => {
+    initializeReactGA();
+  }, []);
   return (
     <HashRouter>
-      {/* Heading */}
-
-      {/* <div className="h-auto w-full bg-cyan-900 p-3">
-        <h1 class="text-xl font-extrabold font-light text-transparent bg-clip-text bg-gradient-to-r from-green-300 via-blue-500 to-purple-600">
-          Metabox - Feel free and enjoy it!
-        </h1>
-      </div> */}
+     
       <div className="p-3  bg-gradient-to-br from-black via-gray-900 to-black bg-cover">
         <Routes>
           <Route
