@@ -1,7 +1,5 @@
 // import Home from "./Home";
 // import Watch from "./Watch";
-import { useEffect } from "react";
-import ReactGA from 'react-ga';
 import "./App.css";
 import { HashRouter, Route, Routes, Link } from "react-router-dom";
 import * as React from "react";
@@ -10,15 +8,8 @@ import BeatLoader from "react-spinners/BeatLoader";
 const Home = React.lazy(() => import("./Home"));
 const Watch = React.lazy(() => import("./Watch"));
 
-function initializeReactGA() {
-  ReactGA.initialize('G-N1YK411Q4Y');
-  ReactGA.pageview(window.location.pathname + window.location.search);
-}
-
 function App() {
-  useEffect(() => {
-    initializeReactGA();
-  }, []);
+
   return (
     <HashRouter>
      
